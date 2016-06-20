@@ -1,13 +1,39 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 .container {
-	max-width: 90%;
-	min-width: 60%;
-	display: block;
 	align-self: center;
 }
 
-.carousel {
-	max-width: 75%;
-	margin: auto;
+#background-carousel{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+
+.carousel,
+.carousel-inner {
+	width:100%;
+	height:100%;
+	z-index:0;
+	overflow:hidden;
+}
+
+.item {
+	width:100%;
+	height:100%;
+
+	z-index:0;
+}
+ 
+#content-wrapper {
+	position:absolute;
+	z-index:1 !important;
+	min-width:100%;
+	min-height:100%;
 }
 
 body {
@@ -15,17 +41,20 @@ body {
 }
 
 .contenido-inicio {
-	max-width: 90%;
-	margin-right: 40px;
-	margin-left: 40px;
-	padding: 20px;
+	max-width: 100%;
+}
+.container {
+	
+}
+.container .panel {
+	margin: 10px 10px;
+	padding: 10px;
+	border-radius: 25px;
+	max-width: 75%;
 }
 
 .texto-bienvenida {
 	max-width: 75%;
-	padding-top: 20px;
-	padding-bottom: 56px;
-	float: left;
 }
 
 .texto-bienvenida p {
@@ -34,17 +63,16 @@ body {
 
 .login {
 	background-color: #FFF;
-	max-width: 22%;	
 	border-radius: 15px;
 	padding: 30px;
-	float: left;
 	box-shadow: 0px 0px 2px;
 }
 .pie {
-	margin: auto;
-	max-width: 30%;
-	font-style: italic;
-	clear: both;
-	display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }
 /* ****************************** */
