@@ -5,58 +5,55 @@
 	<title>Salud Primero S.A. - Pagina de inicio</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="javascript/myjs.js"></script>
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
+	
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>	
 
+	<style>
+		@media (max-width: 990px) { 
+			.container {
+				padding-top: 4%;
+				max-width: 100%;
+			}
+		}
+	</style>
+	<!--
 	<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+	-->
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 
 </head>
 <body>
 
-<div id="content-wrapper">
-	<div id="background-carousel">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Salud Primero S.A.</a>
+    </div>
+    <div class="collapse navbar-collapse" id="HomeBar"></div>
+  </div>
+</nav>
 
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
-		    <div class="item active" style="background: no-repeat left center; background-size: cover;background-attachment: local;">
-		    	<img src="imagenes/fondo2.jpg" alt="Salud Primero S.A.">
-		    </div>
-			<div class="item" style="background: no-repeat left center; background-size: cover;background-attachment: local;">
-				<img src="imagenes/fondo3.jpg" alt="Salud Primero S.A.">
-		    </div>
-		    <div class="item" style="background: no-repeat left center; background-size: cover;background-attachment: local;">
-		    	<img src="imagenes/fondo1.jpg" alt="Salud Primero S.A.">
-		    </div>
-		  </div>
-		</div>
-	</div>
-	<div class="container">
+<div id="content-wrapper">
+		<div class="container">
 			<div class="contenido-inicio col-md-12">
+				
 				<div class="panel1 col-md-8">
 					<div class="login1">
 					    <h3>Bienvenido a Salud Primero S.A.</h3>
 					    <br>
-<!--						<p>Empresa líder en cuidar de usted y su familia. 
-						Con más de 50 años de experiencia trabajando para su bienestar</p>
-						-->
 						<p>Salud Primero S.A. ofrece un servicio de laboratorio especializado de alta calidad. Cuenta con los instrumentos y equipos computarizados más modernos, así como un staff de profesionales médicos y tecnólogos que le garantizan resultados confiables y a tiempo en todas las especialidades.</p>
 						<br>
-					</div>  	
-				</div>
+					</div>  <!-- login 1 -->
+				</div> <!-- panel 1 -->
+
 				<div class="panel2 col-md-4"> <!-- -->
 					<div class="login2">
 				      <form class="form-signin" action="paciente.html">
@@ -73,10 +70,11 @@
 				        </div>
 				        <button class="btn btn-lg btn-primary btn-block" type="submit" id="btnLogin">Login</button>
 				      </form>
-					</div>
-				</div>
-			</div>
-	</div>
+					</div> <!-- login 2-->
+				</div> <!--panel 2 -->
+
+			</div> <!-- contenido/inicio-->
+		</div>
 
 	<br>
 	<br>
@@ -84,6 +82,7 @@
 	<footer class="pie">
 		&copy; Todos los derechos reservados. 2016
 	</footer>
+
 </div>
 
 </body>

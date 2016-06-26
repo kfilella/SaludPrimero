@@ -1,0 +1,22 @@
+body{
+	background: url("../imagenes/fondo2.jpg") no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.content-slide{
+	max-width: 70%;
+	margin: 0px auto;
+}
+
+#slider{
+	margin: 0px;
+}
+
+.pie {
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 2%;
+	text-shadow: 1px 1px #000;
+	color: #FFF
+}

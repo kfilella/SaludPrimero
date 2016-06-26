@@ -4,43 +4,66 @@
     <meta charset="utf-8">
     <title>Salud Primero S.A. - Paciente</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/pacienteStyles.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/pacienteStyles.css">
+    
+    <!-- gmap3 -->
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="https://cdn.jsdelivr.net/gmap3/7.1.0/gmap3.min.js"></script>
+    <script src="javascript/gmap3-master/src/gmap3.js"></script>
+
     <script type="text/javascript" src="javascript/pacienteScript.js"></script>
 </head>
-<body background="imagenes/fondo2.jpg">
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pacienteBar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Salud Primero S.A.</a>
-    </div>
-    <div class="collapse navbar-collapse" id="pacienteBar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-map-marker"></i> Centros M&eacute;dicos <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Centro M&eacute;dico 1</a></li>
-              <li><a href="#">Centro M&eacute;dico 2</a></li>
-              <li><a href="#">Centro M&eacute;dico 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#"><i class="glyphicon glyphicon-user"></i> Perfil</a></li>
-          <li><a href="index.html"><i class="glyphicon glyphicon-off"></i> Salir</a></li>
-        </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class="container">
 
-</div>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pacienteBar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Salud Primero S.A.</a>
+      </div>
+      <div class="collapse navbar-collapse" id="pacienteBar">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-map-marker"></i> Centros M&eacute;dicos <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Centro M&eacute;dico 1</a></li>
+                <li><a href="#">Centro M&eacute;dico 2</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i> Perfil</a></li>
+            <li><a href="index.html"><i class="glyphicon glyphicon-off"></i> Salir</a></li>
+          </ul>
+
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="tabs">
+      <a href="#" id="Tab_Rec"><span>Centros Medicos</span></a>
+      <a href="#" id="Tab_Ant"><span>Antiguas</span></a>
+      <a href="#" id="Tab_Agr"><span>Agregar</span></a>
+    </div>
+
+    <div class="contenido-tabs">
+      <div id="googleMap" style="height: 350px; width: 600px;">
+        
+      </div>
+    </div>
+
+
+  </div>
 
 </body>
 </html>

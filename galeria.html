@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Salud Primero S.A. - Galería de fotos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- JQuery and Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+  	<!-- CDN para los slides -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/flexslider.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.js"></script>
+
+	<!-- Para el estilo de la nav-bar -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- My CSS and JS -->
+	<link rel="stylesheet" type="text/css" href="css/galeria.css">
+	<script type="text/javascript" src="javascript/galeria.js"></script>
+
+</head>
+<body>
+	<!-- Barra superior -->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Salud Primero S.A. - Galería de Fotos</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="HomeBar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="paciente.html"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
+			</ul>	    	
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- Contenedor del Slide y carousel -->
+	<div class="content-slide">
+		<div id="slider" class="flexslider">
+		<!-- Imagenes Grandes -->
+		  <ul class="slides">
+		    <li>
+		      <img src="imagenes/slide/1.jpg" alt="Salud Primero S.A." />
+		      <!-- <p class="flex-caption">Salud Primero S.A.</p> -->
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/2.jpg" />
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/3.jpg" />
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/4.jpg" />
+		    </li>
+			<li>
+		      <img src="imagenes/slide/5.jpg" />
+		    </li>
+			<li>
+		      <img src="imagenes/slide/6.jpg" />
+		    </li>
+			<li>
+		      <img src="imagenes/slide/7.jpg" />
+		    </li>
+		    <!-- items mirrored twice, total of 12 -->
+		  </ul>
+		</div>
+
+		<div id="carousel" class="flexslider">
+		<!-- Imagenes Miniaturas -->
+		  <ul class="slides">
+		    <li>
+		      <img src="imagenes/slide/thumb/t1.jpg" />
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/thumb/t2.jpg" />
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/thumb/t3.jpg" />
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/thumb/t4.jpg" />
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/thumb/t5.jpg" />
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/thumb/t6.jpg" />
+		    </li>
+		    <li>
+		      <img src="imagenes/slide/thumb/t7.jpg" />
+		    </li>
+		  </ul>
+		</div>
+
+
+	
+	</div> <!-- contiene al flexslide -->
+
+
+	<footer class="pie">
+		&copy; Todos los derechos reservados. 2016
+	</footer>
+</body>
+</html>
