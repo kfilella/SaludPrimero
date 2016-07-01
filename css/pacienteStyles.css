@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
 body {
 	position: relative;
 	background-color: black;
 	background-size: cover;
 	background-attachment: fixed;
+	font-family: 'Philosopher', 'Verdana', sans-serif;
 }
 
 #map_canvas, #map_canvas2, #map_canvas3{
@@ -10,15 +13,35 @@ body {
 	width: 100%;
 }
 
-#section1 {padding-top:70px;height:750px;color: #fff; background-color:rgba(0,0,0,0.5);}
+#section1 {padding-top:70px;color: #fff; background-color:rgba(0,0,0,0.5);}
 #section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:80px;color: #fff; background-color: #ff9800;}
-#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+#section3 {padding-top:50px;color: #fff; background-color: #ff9800;}
 
-#section1 p, #section2 .centrosText {
+#section1 {
+	font-size: 1.4em;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#section1 p {
+	text-align: center;
+}
+
+#section1 img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#section2 .centrosText {
 	text-align: center;
 	font-size: 1.5em;
+}
+
+#section1, #section2 .centrosText, #section2 h2, #section3 {
+	text-shadow: 2px 2px #000000;
 }
 
 #video-container {

@@ -23,22 +23,20 @@ $( document ).ready(function() {
     },
     "autofit" );
 */
-    var map, map2, map3;
+    var map1, map2, map3;
+
     initMap();
+
     function initMap() {
         var myOptions = {
             zoom: 14,
             center: new google.maps.LatLng(0.0, 0.0),
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
-        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-
+        map1 = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
         map2 = new google.maps.Map(document.getElementById("map_canvas2"), myOptions);
-
         map3 = new google.maps.Map(document.getElementById("map_canvas3"), myOptions);
     }
-
-    $('')
 
    	var hashTagActive = "";
     $(".scroll").click(function (event) {
