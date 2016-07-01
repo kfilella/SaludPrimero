@@ -5,7 +5,7 @@ body {
 	background-attachment: fixed;
 }
 
-#googleMap, #googleMap2, #googleMap3{
+#map_canvas, #map_canvas2, #map_canvas3{
 	height: 300px;
 	width: 100%;
 }

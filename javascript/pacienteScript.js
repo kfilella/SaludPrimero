@@ -4,7 +4,7 @@ $( document ).ready(function() {
 		console.log(data);
 	});
 	*/
-
+/*
     $('#googleMap').gmap3({
      map: {
         options: {
@@ -22,42 +22,23 @@ $( document ).ready(function() {
      }
     },
     "autofit" );
-
-    $('#googleMap2').gmap3({
-     map: {
-        options: {
-          maxZoom: 14 
-        }  
-     },
-     marker:{
-        address: "Haltern am See, Weseler Str. 151",
-        options: {
-         icon: new google.maps.MarkerImage(
-           "http://gmap3.net/skin/gmap/magicshow.png",
-           new google.maps.Size(32, 37, "px", "px")
-         )
+*/
+    var map, map2, map3;
+    initMap();
+    function initMap() {
+        var myOptions = {
+            zoom: 14,
+            center: new google.maps.LatLng(0.0, 0.0),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
         }
-     }
-    },
-    "autofit" );
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-    $('#googleMap3').gmap3({
-     map: {
-        options: {
-          maxZoom: 14 
-        }  
-     },
-     marker:{
-        address: "Haltern am See, Weseler Str. 151",
-        options: {
-         icon: new google.maps.MarkerImage(
-           "http://gmap3.net/skin/gmap/magicshow.png",
-           new google.maps.Size(32, 37, "px", "px")
-         )
-        }
-     }
-    },
-    "autofit" );
+        map2 = new google.maps.Map(document.getElementById("map_canvas2"), myOptions);
+
+        map3 = new google.maps.Map(document.getElementById("map_canvas3"), myOptions);
+    }
+
+    $('')
 
    	var hashTagActive = "";
     $(".scroll").click(function (event) {
