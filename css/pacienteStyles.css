@@ -1,9 +1,47 @@
 body {
-	background: url("../imagenes/fondo2.jpg") no-repeat center center;
+	position: relative;
+	background-color: black;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 #googleMap{
 	background-color: #000;
+}
+
+#section1 {padding-top:70px;height:750px;color: #fff; background-color:rgba(0,0,0,0.5);}
+#section2 {padding-top:50px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:80px;color: #fff; background-color: #ff9800;}
+#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+#section1 p, #section2 .centrosText {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#video-container {
+  position: absolute;
+}
+#video-container {
+  top:0%;
+  left:0%;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+
+.panel p {
+	color: black;
+	font-size: 1.1em;
+}
+
+video {
+  height: 650px;
+  position:absolute;
+  z-index:-1;
+}
+
+video.fillWidth {
+  width: 100%;
 }

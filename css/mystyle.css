@@ -1,6 +1,6 @@
 body {
 	font-family: arial, times, sans-serif;
-	background: url("../imagenes/fondo2.jpg") no-repeat center center; 
+	background: url("../imagenes/fondos/fondo2.jpg") no-repeat center center; 
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -43,8 +43,7 @@ body {
 	padding-right: 15px;
 	padding-bottom: 15px;
 	box-shadow: 0px 0px 2px;
-	background-color: #FFF;
-	opacity: 0.92;
+	background-color: rgba(255,255,255,0.8);
 }
 
 .pie {

@@ -1,0 +1,60 @@
+{
+	"centromedico1":{
+		"Nombre":"Centro Medico La Gatazo", 
+		"Direccion":"Av Marsical Sucre y Toacazo", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Examenes Generales",
+		 	"Resonancia Magnetica"
+		 ], 
+		"Horarios":"Lunes a Viernes - 08:00 a 20:00", 
+		"Imagenes":[
+		 	"https://areadesalud5.files.wordpress.com/2013/03/p1130996.jpg",
+		 	"https://areadesalud5.files.wordpress.com/2013/03/dsc02370.jpg",
+		 	"https://areadesalud5.files.wordpress.com/2013/03/dsc02372.jpg"
+		 ], 
+		"Coordenadas":{
+			"Latitud":"-0.261168",
+			"Longitud":"-78.547066"
+		}
+	},
+
+	"centromedico2":{
+		"Nombre":"Hospital Clinica Kennedy", 
+		"Direccion":"Av. del Periodista Avenida 11 NO", 
+		"Descripcion":[
+		 	"Examenes Generales",
+		 	"Tomografia",
+		 	"Resonancia Magnetica"
+		 ], 
+		"Horarios":"Lunes a Viernes - 06:00 a 18:00", 
+		"Imagenes":[
+		 	"http://www.eluniverso.com/sites/default/files/styles/nota_ampliada_foto_lightbox/public/fotos/2013/07/19781927a.jpg",
+		 	"http://www.ponce3.com/wp-content/uploads/2012/12/DSCN1191.jpg",
+		 	"http://www.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2013/05/cdv180513fd011_11717277.jpg"
+		 ], 
+		"Coordenadas":{
+			"Latitud":"-2.173195",
+			"Longitud":"-79.899199"
+		}
+	},
+
+	"centromedico3":{
+		"Nombre":"Clinica La Paz", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+			"Examenes Generales",
+		 	"Radiotempanacion osea",
+		 	"Electrocardiograma"
+		 ], 
+		"Horarios":"Lunes a Viernes - 07:00 a 21:00", 
+		"Imagenes":[
+		 	"http://images.mercattel.com/fotos_new/1204/clinica-la-paz-cordoba-1168723.jpg",
+		 	"http://www.eltiempo.com.ec/fotos-cuenca-ecuador/ecuador/t1_1425347570.jpg"
+		 ], 
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	}
+}
