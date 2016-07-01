@@ -5,12 +5,13 @@ body {
 	background-attachment: fixed;
 }
 
-#googleMap{
-	background-color: #000;
+#googleMap, #googleMap2, #googleMap3{
+	height: 300px;
+	width: 100%;
 }
 
 #section1 {padding-top:70px;height:750px;color: #fff; background-color:rgba(0,0,0,0.5);}
-#section2 {padding-top:50px;color: #fff; background-color: #673ab7;}
+#section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: #673ab7;}
 #section3 {padding-top:80px;color: #fff; background-color: #ff9800;}
 #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
 #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
@@ -23,6 +24,7 @@ body {
 #video-container {
   position: absolute;
 }
+
 #video-container {
   top:0%;
   left:0%;
@@ -31,7 +33,7 @@ body {
   overflow: hidden;
 }
 
-.panel p {
+.centroPanel {
 	color: black;
 	font-size: 1.1em;
 }
@@ -44,4 +46,8 @@ video {
 
 video.fillWidth {
   width: 100%;
+}
+
+.modal-lg {
+	width: 90%;
 }

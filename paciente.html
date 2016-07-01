@@ -52,154 +52,480 @@
   </nav>
     
   <div class="container">
-  <div id="video-container">
-<video autoplay muted loop class="fillWidth">
-<source src="videos/labtour.mp4" type="video/mp4"/>
-</video>
-</div><!-- end video-container -->
-<div id="section1" class="container-fluid" >
-  <h1>Bienvenido, Paciente</h1>
-  <p>Salud Primero S.A. </p>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
-  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
-<div id="section2" class="container-fluid" style="text-align:center">
-  <h2>Centros M&eacute;dicos</h2>
-  <p class="centrosText">En Salud Primero S.A. su salud es nuestra prioridad. Encuentre informaci&oacute;n sobre nuestros centros m&eacute;dicos m&aacute;s cercanos para ofrecerle un servicio de calidad.</p>
-    <div class="row-md-12">
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title text-center">Centro M&eacute;dico 1</h3>
+    <div id="video-container">
+      <video autoplay muted loop class="fillWidth">
+        <source src="videos/labtour.mp4" type="video/mp4"/>
+      </video>
+    </div><!-- end video-container -->
+    <!--START section bienvenido-->
+    <div id="section1" class="container-fluid" >
+      <h1>Bienvenido, Paciente</h1>
+      <p>Salud Primero S.A. </p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <!--END section bienvenido-->
+    <!--START section centros medicos-->
+    <div id="section2" class="container-fluid">
+      <h2 style="text-align:center;">Centros M&eacute;dicos</h2>
+      <p class="centrosText">En Salud Primero S.A. su salud es nuestra prioridad. Encuentre informaci&oacute;n sobre nuestros centros m&eacute;dicos m&aacute;s cercanos para ofrecerle un servicio de calidad.</p>
+      <div class="row-md-12">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">Centro M&eacute;dico 1 - Guayaquil</h3>
+            </div>
+            <div class="panel-body centroPanel">
+              <span style="font-weight:bold;">Servicios: </span><br/>
+              <ul>
+                <li>Hemograma completo</li>
+                <li>Urin&aacute;lisis completo</li>
+                <li>Perfil renal: Nitr&oacute;geno de urea, Creatinina, &Aacute;cido &uacute;rico, Prote&iacute;na total, alb&uacute;mina/globulina calcio, glucosa</li>
+                <li>Perfil triode: TSH, T3, T4</li>
+              </ul>
+            </div>
+            <div class="panel-footer text-center">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centro1Modal">Mas informaci&oacute;n</button>
+            </div>
           </div>
-          <div class="panel-body">
-            <p class="text-center" style="font-weight:bold;">Guayaquil</p>
-            <p class="text-center">Cdla Nva Kennedy, Av. del Periodista y Callejón 11A</p>
-            <p class="text-center">042 123-456</p>
-            <p class="text-center">Atenci&oacute;n Lunes a S&aacute;bado</p>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">Centro M&eacute;dico 2 - Quito</h3>
+
+            </div>
+            <div class="panel-body centroPanel">
+              <span style="font-weight:bold;">Servicios: </span><br/>
+              <ul>
+                <li>Hemograma completo</li>
+                <li>Urin&aacute;lisis completo</li>
+                <li>Perfil renal: Nitr&oacute;geno de urea, Creatinina, &Aacute;cido &uacute;rico, Prote&iacute;na total, alb&uacute;mina/globulina calcio, glucosa</li>
+                <li>Perfil triode: TSH, T3, T4</li>
+              </ul>
+            </div>
+            <div class="panel-footer text-center">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centro2Modal">Mas informaci&oacute;n</button>
+            </div>
           </div>
-          <div class="panel-footer text-center">
-            <button type="button" class="btn btn-primary">Mas informaci&oacute;n</button>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">Centro M&eacute;dico 3 - Cuenca</h3>
+            </div>
+            <div class="panel-body centroPanel">
+              <span style="font-weight:bold;">Servicios: </span><br/>
+              <ul>
+                <li>Hemograma completo</li>
+                <li>Urin&aacute;lisis completo</li>
+                <li>Perfil renal: Nitr&oacute;geno de urea, Creatinina, &Aacute;cido &uacute;rico, Prote&iacute;na total, alb&uacute;mina/globulina calcio, glucosa</li>
+                <li>Perfil triode: TSH, T3, T4</li>
+              </ul>
+            </div>
+            <div class="panel-footer text-center">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centro3Modal">Mas informaci&oacute;n</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title text-center">Centro M&eacute;dico 2</h3>
+    </div> 
+    <!--END section centros medicos-->
+    <!--START modals centros medicos-->
+    <div id="centro1Modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 class="modal-title" id="myModalLabel">Centro M&eacute;dico 1</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div id="carousel-centro1" class="carousel slide col-md-6" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="imagenes/centros_medicos/centro1.jpg" alt="centro medico 1">
+                    </div>
+                    <div class="item">
+                      <img src="imagenes/centros_medicos/centro2.jpg" alt="centro medico 1">
+                    </div>
+                    <div class="item">
+                      <img src="imagenes/centros_medicos/centro3.jpg" alt="centro medico 1">
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-centro1" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-centro1" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Informaci&oacute;n</h3>
+                    </div>
+                    <div class="panel-body">
+                      <span style="font-weight:bold;">Servicios: </span><br/>
+                      <ul>
+                        <li>Hemograma completo</li>
+                        <li>Urin&aacute;lisis completo</li>
+                        <li>Perfil renal: Nitr&oacute;geno de urea, Creatinina, &Aacute;cido &uacute;rico, Prote&iacute;na total, alb&uacute;mina/globulina calcio, glucosa</li>
+                        <li>Perfil triode: TSH, T3, T4</li>
+                      </ul>
+                      <span style="font-weight:bold;">Direcci&oacute;n: </span><span>Guayaquil, Cdla Nva Kennedy, Av. del Periodista y Callejón 11A</span><br/>
+                      <span style="font-weight:bold;">Tel&eacute;fono: </span><span>042 123-456</span><br/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Mapa</h3>
+                    </div>
+                    <div class="panel-body">
+                      <div class="contenido-tabs">
+                        <div id="googleMap">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          </div>
-          <div class="panel-body">
-            <p class="text-center" style="font-weight:bold;">Quito</p>
-            <p class="text-center">Av. Juan Ram&oacute;n Jim&eacute;nez</p>
-            <p class="text-center">042 987-654</p>
-            <p class="text-center">Atenci&oacute;n Lunes a Domingo</p>
-          </div>
-          <div class="panel-footer text-center">
-            <button type="button" class="btn btn-primary">Mas informaci&oacute;n</button>
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Horarios de Atenci&oacute;n</h3>
+                    </div>
+                    <div class="panel-body">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>D&iacute;a</th>
+                        <th>Horas</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>09:00 - 17:30</td>
+                      </tr>
+                      <tr>
+                        <td>S&aacute;bado</td>
+                        <td>10:00 - 16:00</td>
+                      </tr>
+                      <tr>
+                        <td>Domingo</td>
+                        <td>10:00 - 14:00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title text-center">Centro M&eacute;dico 3</h3>
+    </div> <!--end centro 1 modal-->
+    <div id="centro2Modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 class="modal-title" id="myModalLabel">Centro M&eacute;dico 2</h2>
           </div>
-          <div class="panel-body">
-            <p class="text-center" style="font-weight:bold;">Cuenca</p>
-            <p class="text-center">Av. Los Arupos y Av. 12 de Abril</p>
-            <p class="text-center">042 098-123</p>
-            <p class="text-center">Atenci&oacute;n Lunes a S&aacute;bado</p>
-          </div>
-          <div class="panel-footer text-center">
-            <button type="button" class="btn btn-primary">Mas informaci&oacute;n</button>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div id="carousel-centro2" class="carousel slide col-md-6" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="imagenes/centros_medicos/centro1.jpg" alt="centro medico 1">
+                    </div>
+                    <div class="item">
+                      <img src="imagenes/centros_medicos/centro2.jpg" alt="centro medico 1">
+                    </div>
+                    <div class="item">
+                      <img src="imagenes/centros_medicos/centro3.jpg" alt="centro medico 1">
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-centro2" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-centro2" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Informaci&oacute;n</h3>
+                    </div>
+                    <div class="panel-body">
+                      <span style="font-weight:bold;">Servicios: </span><br/>
+                      <ul>
+                        <li>Hemograma completo</li>
+                        <li>Urin&aacute;lisis completo</li>
+                        <li>Perfil renal: Nitr&oacute;geno de urea, Creatinina, &Aacute;cido &uacute;rico, Prote&iacute;na total, alb&uacute;mina/globulina calcio, glucosa</li>
+                        <li>Perfil triode: TSH, T3, T4</li>
+                      </ul>
+                      <span style="font-weight:bold;">Direcci&oacute;n: </span><span>Quito, Cdla Nva Kennedy, Av. del Periodista y Callejón 11A</span><br/>
+                      <span style="font-weight:bold;">Tel&eacute;fono: </span><span>042 123-456</span><br/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Mapa</h3>
+                    </div>
+                    <div class="panel-body">
+                      <div class="contenido-tabs">
+                        <div id="googleMap2">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Horarios de Atenci&oacute;n</h3>
+                    </div>
+                    <div class="panel-body">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>D&iacute;a</th>
+                        <th>Horas</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>09:00 - 17:30</td>
+                      </tr>
+                      <tr>
+                        <td>S&aacute;bado</td>
+                        <td>10:00 - 16:00</td>
+                      </tr>
+                      <tr>
+                        <td>Domingo</td>
+                        <td>10:00 - 14:00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-</div>
-<div class="hidden" style="visibility:none">
-    <div class="tabs">
-      <a href="#" id="Tab_Rec"><span>Centros Medicos</span></a>
-      <a href="#" id="Tab_Ant"><span>Antiguas</span></a>
-      <a href="#" id="Tab_Agr"><span>Agregar</span></a>
-    </div>
+    </div> <!--end centro 2 modal-->
+    <div id="centro3Modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 class="modal-title" id="myModalLabel">Centro M&eacute;dico 3</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid bd-example-row">
+              <div class="row">
+                <div id="carousel-centro3" class="carousel slide col-md-6" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="imagenes/centros_medicos/centro1.jpg" alt="centro medico 1">
+                    </div>
+                    <div class="item">
+                      <img src="imagenes/centros_medicos/centro2.jpg" alt="centro medico 1">
+                    </div>
+                    <div class="item">
+                      <img src="imagenes/centros_medicos/centro3.jpg" alt="centro medico 1">
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-centro3" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-centro3" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Informaci&oacute;n</h3>
+                    </div>
+                    <div class="panel-body">
+                      <span style="font-weight:bold;">Servicios: </span><br/>
+                      <ul>
+                        <li>Hemograma completo</li>
+                        <li>Urin&aacute;lisis completo</li>
+                        <li>Perfil renal: Nitr&oacute;geno de urea, Creatinina, &Aacute;cido &uacute;rico, Prote&iacute;na total, alb&uacute;mina/globulina calcio, glucosa</li>
+                        <li>Perfil triode: TSH, T3, T4</li>
+                      </ul>
+                      <span style="font-weight:bold;">Direcci&oacute;n: </span><span>Cuenca, Cdla Nva Kennedy, Av. del Periodista y Callejón 11A</span><br/>
+                      <span style="font-weight:bold;">Tel&eacute;fono: </span><span>042 123-456</span><br/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Mapa</h3>
+                    </div>
+                    <div class="panel-body">
+                      <div class="contenido-tabs">
+                        <div id="googleMap3">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-    <div class="contenido-tabs">
-      <div id="googleMap" style="height: 350px; width: 600px;">
-        
+                <div class="col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Horarios de Atenci&oacute;n</h3>
+                    </div>
+                    <div class="panel-body">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>D&iacute;a</th>
+                        <th>Horas</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>09:00 - 17:30</td>
+                      </tr>
+                      <tr>
+                        <td>S&aacute;bado</td>
+                        <td>10:00 - 16:00</td>
+                      </tr>
+                      <tr>
+                        <td>Domingo</td>
+                        <td>10:00 - 14:00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div> <!--end centro 3 modal-->
+    <!--END modals centros medicos-->
+
+    <div id="section3" class="container-fluid">
+      <h2 style="text-align:center">Galer&iacute;a</h2>
+      <!-- Contenedor del Slide y carousel -->
+      <div class="content-slide">
+        <div id="slider" class="flexslider">
+        <!-- Imagenes Grandes -->
+          <ul class="slides">
+            <li>
+              <img src="imagenes/slide/1.jpg" alt="Salud Primero S.A." />
+              <!-- <p class="flex-caption">Salud Primero S.A.</p> -->
+            </li>
+            <li>
+              <img src="imagenes/slide/2.jpg" />
+            </li>
+            <li>
+              <img src="imagenes/slide/3.jpg" />
+            </li>
+            <li>
+              <img src="imagenes/slide/4.jpg" />
+            </li>
+          <li>
+              <img src="imagenes/slide/5.jpg" />
+            </li>
+          <li>
+              <img src="imagenes/slide/6.jpg" />
+            </li>
+          <li>
+              <img src="imagenes/slide/7.jpg" />
+            </li>
+            <!-- items mirrored twice, total of 12 -->
+          </ul>
+        </div>
+
+        <div id="carousel" class="flexslider">
+        <!-- Imagenes Miniaturas -->
+          <ul class="slides">
+            <li>
+              <img src="imagenes/slide/thumb/t1.jpg" />
+            </li>
+            <li>
+              <img src="imagenes/slide/thumb/t2.jpg" />
+            </li>
+            <li>
+              <img src="imagenes/slide/thumb/t3.jpg" />
+            </li>
+            <li>
+              <img src="imagenes/slide/thumb/t4.jpg" />
+            </li>
+            <li>
+              <img src="imagenes/slide/thumb/t5.jpg" />
+            </li>
+            <li>
+              <img src="imagenes/slide/thumb/t6.jpg" />
+            </li>
+            <li>
+              <img src="imagenes/slide/thumb/t7.jpg" />
+            </li>
+          </ul>
+        </div>
+      </div> <!-- contiene al flexslide -->
     </div>
-</div>
-</div>
-<div id="section3" class="container-fluid">
-  <h2 style="text-align:center">Galer&iacute;a</h2>
-  <!-- Contenedor del Slide y carousel -->
-  <div class="content-slide">
-    <div id="slider" class="flexslider">
-    <!-- Imagenes Grandes -->
-      <ul class="slides">
-        <li>
-          <img src="imagenes/slide/1.jpg" alt="Salud Primero S.A." />
-          <!-- <p class="flex-caption">Salud Primero S.A.</p> -->
-        </li>
-        <li>
-          <img src="imagenes/slide/2.jpg" />
-        </li>
-        <li>
-          <img src="imagenes/slide/3.jpg" />
-        </li>
-        <li>
-          <img src="imagenes/slide/4.jpg" />
-        </li>
-      <li>
-          <img src="imagenes/slide/5.jpg" />
-        </li>
-      <li>
-          <img src="imagenes/slide/6.jpg" />
-        </li>
-      <li>
-          <img src="imagenes/slide/7.jpg" />
-        </li>
-        <!-- items mirrored twice, total of 12 -->
-      </ul>
-    </div>
-
-    <div id="carousel" class="flexslider">
-    <!-- Imagenes Miniaturas -->
-      <ul class="slides">
-        <li>
-          <img src="imagenes/slide/thumb/t1.jpg" />
-        </li>
-        <li>
-          <img src="imagenes/slide/thumb/t2.jpg" />
-        </li>
-        <li>
-          <img src="imagenes/slide/thumb/t3.jpg" />
-        </li>
-        <li>
-          <img src="imagenes/slide/thumb/t4.jpg" />
-        </li>
-        <li>
-          <img src="imagenes/slide/thumb/t5.jpg" />
-        </li>
-        <li>
-          <img src="imagenes/slide/thumb/t6.jpg" />
-        </li>
-        <li>
-          <img src="imagenes/slide/thumb/t7.jpg" />
-        </li>
-      </ul>
-    </div>
-
-
-  
-  </div> <!-- contiene al flexslide -->
-</div>
-
-
-
-  </div>
+  </div> <!-- END contenido -->
 
 </body>
 </html>

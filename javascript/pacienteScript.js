@@ -5,11 +5,59 @@ $( document ).ready(function() {
 	});
 	*/
 
-	$('#googleMap').gmap3({
-		marker:{
-      		address: "266 George St, Brisbane QLD 4000"
-    	}
-	});
+    $('#googleMap').gmap3({
+     map: {
+        options: {
+          maxZoom: 14 
+        }  
+     },
+     marker:{
+        address: "Haltern am See, Weseler Str. 151",
+        options: {
+         icon: new google.maps.MarkerImage(
+           "http://gmap3.net/skin/gmap/magicshow.png",
+           new google.maps.Size(32, 37, "px", "px")
+         )
+        }
+     }
+    },
+    "autofit" );
+
+    $('#googleMap2').gmap3({
+     map: {
+        options: {
+          maxZoom: 14 
+        }  
+     },
+     marker:{
+        address: "Haltern am See, Weseler Str. 151",
+        options: {
+         icon: new google.maps.MarkerImage(
+           "http://gmap3.net/skin/gmap/magicshow.png",
+           new google.maps.Size(32, 37, "px", "px")
+         )
+        }
+     }
+    },
+    "autofit" );
+
+    $('#googleMap3').gmap3({
+     map: {
+        options: {
+          maxZoom: 14 
+        }  
+     },
+     marker:{
+        address: "Haltern am See, Weseler Str. 151",
+        options: {
+         icon: new google.maps.MarkerImage(
+           "http://gmap3.net/skin/gmap/magicshow.png",
+           new google.maps.Size(32, 37, "px", "px")
+         )
+        }
+     }
+    },
+    "autofit" );
 
    	var hashTagActive = "";
     $(".scroll").click(function (event) {
