@@ -29,8 +29,8 @@ $( document ).ready(function() {
 
     function initMap() {
         var myOptions = {
-            zoom: 14,
-            center: new google.maps.LatLng(0.0, 0.0),
+            zoom: 18,
+            center: new google.maps.LatLng(-2.133330, -79.903968),
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         map1 = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
