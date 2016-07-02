@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+body {
+	position: relative;
+	background-color: black;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Philosopher', 'Verdana', sans-serif;
+}
+
+#section1 {padding-top:70px;color: #fff; background-color:rgba(0,0,0,0.5);}
+#section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: #673ab7;}
+
+#section1 {
+	font-size: 1.4em;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#section1 h1{
+	text-align: right;
+}
+
+#section1 p {
+	text-align: center;
+}
+
+#section1 img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#section2 {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#section1, #section2 {
+	text-shadow: 2px 2px #000000;
+}
