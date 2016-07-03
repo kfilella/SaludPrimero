@@ -1,11 +1,13 @@
-{
-	"centromedico1":{
+[
+	{
 		"Nombre":"Centro Medico La Gatazo", 
 		"Direccion":"Av Marsical Sucre y Toacazo", 
 		"Descripcion":[
 		 	"Desintometria Osea",
-		 	"Examenes Generales",
-		 	"Resonancia Magnetica"
+		 	"Hemograma completo",
+		 	"Resonancia Magnetica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
 		 ], 
 		"Horarios":"Lunes a Viernes - 08:00 a 20:00", 
 		"Imagenes":[
@@ -19,13 +21,14 @@
 		}
 	},
 
-	"centromedico2":{
+	{
 		"Nombre":"Hospital Clinica Kennedy", 
 		"Direccion":"Av. del Periodista Avenida 11 NO", 
 		"Descripcion":[
 		 	"Examenes Generales",
 		 	"Tomografia",
-		 	"Resonancia Magnetica"
+		 	"Resonancia Magnetica",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
 		 ], 
 		"Horarios":"Lunes a Viernes - 06:00 a 18:00", 
 		"Imagenes":[
@@ -39,13 +42,14 @@
 		}
 	},
 
-	"centromedico3":{
+	{
 		"Nombre":"Clinica La Paz", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
 		"Descripcion":[
 			"Examenes Generales",
 		 	"Radiotempanacion osea",
-		 	"Electrocardiograma"
+		 	"Electrocardiograma",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
 		 ], 
 		"Horarios":"Lunes a Viernes - 07:00 a 21:00", 
 		"Imagenes":[
@@ -57,4 +61,4 @@
 			"Longitud":"-78.9946676"
 		}
 	}
-}
+]
