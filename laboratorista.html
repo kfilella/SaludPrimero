@@ -10,6 +10,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/laboratorista.css">
+    <script type="text/javascript" src="javascript/laboratorista.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" class="md-">
@@ -27,9 +28,8 @@
       <div class="collapse navbar-collapse" id="pacienteBar">
           
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-duplicate"></i> Mis ex&aacute;menes</a></li>
-            <li><a href="#section2" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-map-marker"></i> Centros M&eacute;dicos</a></li>
-            <li><a href="#section3" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-picture"></i> Galer&iacute;a</a></li>
+            <li><a href="#section2" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-duplicate"></i> Llegada de muestras</a></li>
+            <li><a href="#section3" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-picture"></i> Ingreso de resultados</a></li>
             <li><a href="#" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-user"></i> Perfil</a></li>
             <li><a href="index.html"><i class="glyphicon glyphicon-off" data-toggle="collapse" data-target=".navbar-collapse.in" ></i> Salir</a></li>
           </ul>
@@ -47,18 +47,84 @@
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
       <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
-  	</div>
+  	
   	<!-- END section Bienvenido, Lab-->
 
-  	<!-- START -->
-  	<div id="section2" class="container-fluid" >
+  	<!-- START section 2 -->
+  	<div id="section2" class="container-fluid">
       <h2 style="text-align:center;">Llegada de muestras</h2>
       <hr/>
-      <p class="centrosText">En esta secci&oacute;n encuentre informaci&oacute;n sobre las muestras que han llegado al laboratorio o en su defecto, comunique cualquier anomal&iacute;a</p>
-  	</div>
-  	<!-- END -->
+      <p class="muestrasText">En esta secci&oacute;n encuentre informaci&oacute;n sobre las muestras que han llegado al laboratorio o en su defecto, comunique cualquier anomal&iacute;a</p>
+      <h3>Selecciona una muestra de la lista: </h3>
+      <div class="col-md-5 muestras-list">
+	      <table class="table table-striped">
+	      	<tbody>
+				<tr><td><span onclick="llenar_info(1);">Muestra 1</span></td></tr>
+	      		<tr><a><td><span onclick="llenar_info(2);">Muestra 2</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(3);">Muestra 3</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(4);">Muestra 4</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(5);">Muestra 5</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(6);">Muestra 6</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(7);">Muestra 7</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(8);">Muestra 8</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(9);">Muestra 9</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(10);">Muestra 10</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(11);">Muestra 11</span></td></a></tr>
+	      		<tr><a><td><span onclick="llenar_info(12);">Muestra 12</span></td></a></tr>
+	      	</tbody>
+	      </table>
+      </div>
 
+      <div class="col-md-7" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+	      <div class="col-md-11 muestras-info pull-right">
+
+			<div id="info-mues">
+				<h2>Informacion de la muestra </h2>
+				<!-- Aqui va la info de la muestra con jquery-->
+			</div>
+
+	      </div>
+      </div>
+
+  	</div>
+  	<!-- END section 2 -->
+
+  	<div id="section3" class="container-fluid">
+  	  	<h2 style="text-align:center;">Ingreso de resultados</h2>
+  	  	<hr/>
+
+  	  	<div style="margin-left: 15%; margin-right: 15%;">
+			<form role="form">
+			  <div class="form-group">
+			    <label for="last_pac">Apellidos del paciente: </label>
+			    <input type="text" class="form-control" id="last_pac"
+			           placeholder="Introduzca los apellidos">
+			  </div>
+			  <div class="form-group">
+			    <label for="name_pac">Nombres del paciente: </label>
+			    <input type="text" class="form-control" id="name_pac"
+			           placeholder="Introduzca los nombres">
+			  </div>
+			  <div class="form-group">
+			    <label for="resultado_pac">Resultado: </label>
+			    <textarea class="form-control" rows="4" name="message" placeholder="Diagn&oacute;stico...">
+			    </textarea>
+			  </div>
+			  <div class="checkbox">
+			    <label>
+			      <input type="checkbox" /> Activa esta casilla para confirmar.
+			    </label>
+			  </div>
+			  <button type="submit" class="btn btn-default">Enviar</button>
+			</form>
+  	  	</div>
+
+  	</div>
+  	<footer class="pie">
+        &copy; Todos los derechos reservados. 2016
+	</footer>
   </div>
+  <!-- END CONTAINER -->
 
 </body>
 </html>

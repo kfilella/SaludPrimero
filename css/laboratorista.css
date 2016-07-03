@@ -10,13 +10,17 @@ body {
 
 #section1 {padding-top:70px;color: #fff; background-color:rgba(0,0,0,0.5);}
 #section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:50px;color: #fff; background-color: #ff9800;}
 
 #section1 {
+	background: url("../imagenes/lab/lab2.jpg") no-repeat center center;
+	background-size: cover;
 	font-size: 1.4em;
     overflow: hidden;
     position: relative;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+    text-shadow: 2px 2px #000000;
 }
 
 #section1 h1{
@@ -38,6 +42,58 @@ body {
 	font-size: 1.5em;
 }
 
-#section1, #section2 {
-	text-shadow: 2px 2px #000000;
+table{
+	height: 400px; 
+}
+
+tbody{
+    overflow-y: scroll;
+    height: 400px;
+    width: 93%;
+    position: absolute;
+}
+
+tr {
+	width: 100%;
+	display: inline-table;
+}
+
+td{
+	color: #000000;
+	background-color: #FFFFFF;
+	opacity: 0.9;
+}
+
+td:hover{
+	color: #FFFFFF;
+	background-color: #000000;
+	opacity: 0.9;
+}
+
+.muestras-info {
+	border-radius: 10px;
+	background-color: #000000;
+	opacity: 0.9;
+	margin: auto;
+	height: 400px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.form_paciente{
+	align-self: center;
+}
+
+#section3 {
+	text-align: left;
+	font-size: 1.5em;
+	padding-bottom: 100px;
+}
+
+.pie {
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 2%;
+	text-shadow: 1px 1px #000;
+	color: #FFF
 }
