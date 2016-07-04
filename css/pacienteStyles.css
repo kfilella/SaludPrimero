@@ -74,3 +74,12 @@ video.fillWidth {
 .modal-lg {
 	width: 90%;
 }
+
+#section2 .row-md-12 .col-md-4 {
+	/* # */
+}
+
+#section2 .row-md-12 .col-md-4 .panel{
+	height: 315px;
+	overflow-y: scroll;
+}

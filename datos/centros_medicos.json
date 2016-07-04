@@ -1,20 +1,14 @@
 [
 	{
-		"Nombre":"Centro Medico La Gatazo", 
-		"Direccion":"Av Marsical Sucre y Toacazo", 
+		"Nombre":"Centro Medico Popular 1", 
+		"Direccion":"Av Mariscal Sucre y Toacazo", 
 		"Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Resonancia Magnetica",
 		 	"Urinálisis completo",
 		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
-		 ], 
-		"Horarios":"Lunes a Viernes - 08:00 a 20:00", 
-		"Imagenes":[
-		 	"https://areadesalud5.files.wordpress.com/2013/03/p1130996.jpg",
-		 	"https://areadesalud5.files.wordpress.com/2013/03/dsc02370.jpg",
-		 	"https://areadesalud5.files.wordpress.com/2013/03/dsc02372.jpg"
-		 ], 
+		 ],
 		"Coordenadas":{
 			"Latitud":"-0.261168",
 			"Longitud":"-78.547066"
@@ -28,14 +22,9 @@
 		 	"Examenes Generales",
 		 	"Tomografia",
 		 	"Resonancia Magnetica",
-		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
-		 ], 
-		"Horarios":"Lunes a Viernes - 06:00 a 18:00", 
-		"Imagenes":[
-		 	"http://www.eluniverso.com/sites/default/files/styles/nota_ampliada_foto_lightbox/public/fotos/2013/07/19781927a.jpg",
-		 	"http://www.ponce3.com/wp-content/uploads/2012/12/DSCN1191.jpg",
-		 	"http://www.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2013/05/cdv180513fd011_11717277.jpg"
-		 ], 
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa",
+		 	"Perfil triode: TSH, T3, T4"
+		 ],
 		"Coordenadas":{
 			"Latitud":"-2.173195",
 			"Longitud":"-79.899199"
@@ -49,13 +38,281 @@
 			"Examenes Generales",
 		 	"Radiotempanacion osea",
 		 	"Electrocardiograma",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa",
+		 	"Perfil triode: TSH, T3, T4"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Clinica Latinoamericana", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+			"Diagnóstico preventivo de cáncer",
+		 	"Radiotempanacion osea",
+		 	"Electrocardiograma",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa",
+		 	"Perfil triode: TSH, T3, T4"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Hospital Luis Vernaza", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+			"Tomografías",
+		 	"Radiotempanación osea",
+		 	"Electrocardiograma",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa",
+		 	"Perfil triode: TSH, T3, T4"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Clinica Arizmendi", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Resonancia Magnetica",
+		 	"Urinálisis completo",
 		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
-		 ], 
-		"Horarios":"Lunes a Viernes - 07:00 a 21:00", 
-		"Imagenes":[
-		 	"http://images.mercattel.com/fotos_new/1204/clinica-la-paz-cordoba-1168723.jpg",
-		 	"http://www.eltiempo.com.ec/fotos-cuenca-ecuador/ecuador/t1_1425347570.jpg"
-		 ], 
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Maternidad Santa Marianita", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Planificación familiar",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Hospital del Seguro IESS", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Resonancia Magnetica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Clínica Alcívar", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Hospital Rumiñahui", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Clínica Benalcázar", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Hospital Alfredo Valenzuela", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Laboratorio de Infectología", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Hospital Alejandro Mann", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Clínica Panamericana", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Hospital Teododo Maldonado", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Laboratorio clínico # 7", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Clínica Castañeda", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Centro de Salud # 10", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
+		"Coordenadas":{
+			"Latitud":"-2.903721",
+			"Longitud":"-78.9946676"
+		}
+	},
+
+	{
+		"Nombre":"Clínica La Asunción", 
+		"Direccion":"Ave Viracochabamba, Cuenca", 
+		"Descripcion":[
+		 	"Desintometria Osea",
+		 	"Hemograma completo",
+		 	"Tomografía abdomino-pélvica",
+		 	"Urinálisis completo",
+		 	"Perfil renal: Nitrógeno de urea, Creatinina, Ácido úrico, Proteína total, albúmina/globulina, calcio, glucosa"
+		 ],
 		"Coordenadas":{
 			"Latitud":"-2.903721",
 			"Longitud":"-78.9946676"

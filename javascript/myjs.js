@@ -25,10 +25,12 @@ function inicio_sesion(){
 
   	if ($var1=="user") {
   		$(".login2 .form-signin").attr("action","paciente.html");
-  	}
-
-	if ($var1=="laborat") {
-		$(".login2 .form-signin").attr("action","laboratorista.html");
-  	}
+  	}	
+    else if ($var1=="laborat") {
+		  $(".login2 .form-signin").attr("action","laboratorista.html");
+  	} 
+    else {
+      alert("¡Usuario incorrecto!");
+    }
   	
 }

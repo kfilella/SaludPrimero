@@ -1,14 +1,9 @@
 function cargar_servicios(){
     $.getJSON("datos/centros_medicos.json", function(data){
         $.each(data,function(i) {
-            var $val = data[i].Coordenadas;
             var $descrip = data[i].Descripcion;
             var $descrip2 = data[i].Descripcion;
             var $nombrecentro = data[i].Nombre;
-            
-            var $lat = $val.Latitud
-            var $lon = $val.Longitud
-
             var $ul = $("<ul></ul>");
             var $ul2 = $("<ul></ul>");
             var $mhmt = $(".modal-header");
@@ -17,16 +12,18 @@ function cargar_servicios(){
             $h2.attr("id","myModalLabel");
             $h2.text($nombrecentro);
             $h2.appendTo($mhmt[i]);
-            /*$mhmt[i].innerHTML($nombrecentro);*/
             var $cp = $(".centroPanel");  // Para paneles
             var $inf = $(".servicios");  // Para Modal
+
+            console.log();
             for (var j = 0; j < $descrip.length ; j++){
                 $ul.append("<li>"+$descrip[j]+"</li>");
                 $ul2.append("<li>"+$descrip2[j]+"</li>");
             }
+
             $ul.appendTo($cp[i]);
             $ul2.appendTo($inf[i]);
-        })
+        });
     });
 }
 

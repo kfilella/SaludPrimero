@@ -1,5 +1,39 @@
 $(document).ready(function() {
-	var hashTagActive = "";
+	llenarTablaMuestras();
+	anim();
+});
+
+
+function llenar_info(i) {
+	$("#info-mues h2").text("");
+	$("#info-mues h2").text("Informacion de la muestra " + (i+1));
+	var $par1 = $("<p></p>");
+	var $par2 = $("<p></p>");
+	$("#info-mues p").text("");
+
+	$.getJSON("datos/datos_muestras.json", function(data) {
+		$par1.text("Paciente: "+data[i].paciente);	
+		$par2.text("Información: "+data[i].Info);	
+	});
+	
+	$("#info-mues").append($par1);
+	$("#info-mues").append($par2);
+}
+
+
+function llenarTablaMuestras() {
+	$.getJSON("datos/datos_muestras.json", function(data) {
+		var $tabla = $("#tablaMuestras tbody");
+		$.each(data,function(i) {
+			$tabla.append('<tr><td><span onclick="llenar_info('+i+');">'  
+				+data[i].titulo+'</span></td></tr>');
+		});
+	});
+}
+
+
+function anim() {
+    var hashTagActive = "";
     $(".scroll").click(function (event) {
         if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
             event.preventDefault();
@@ -17,14 +51,5 @@ $(document).ready(function() {
             hashTagActive = this.hash;
         }
     });
-});
-
-function llenar_info(i) {
-	$("#info-mues h2").text("");
-	$("#info-mues h2").text("Informacion de la muestra " + i);
-	var $par = $("<p></p>");
-	$("#info-mues p").text("");
-	$par.text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ino reprehenderit ino voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt ino culpa qui officia deserunt mollit anim id est laborum.");
-	$("#info-mues").append($par);
 }
 

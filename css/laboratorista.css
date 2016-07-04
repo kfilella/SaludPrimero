@@ -51,6 +51,8 @@ tbody{
     height: 400px;
     width: 93%;
     position: absolute;
+    background-color: #FFFFFF;
+    opacity: 0.75;
 }
 
 tr {
@@ -59,15 +61,15 @@ tr {
 }
 
 td{
-	color: #000000;
+	color: #673ab7;
 	background-color: #FFFFFF;
-	opacity: 0.9;
+	opacity: 1;
 }
 
 td:hover{
 	color: #FFFFFF;
-	background-color: #000000;
-	opacity: 0.9;
+	background-color: #673ab7;
+	opacity: 0.7;
 }
 
 .muestras-info {
