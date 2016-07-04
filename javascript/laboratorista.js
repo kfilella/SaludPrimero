@@ -25,8 +25,7 @@ function llenarTablaMuestras() {
 	$.getJSON("datos/datos_muestras.json", function(data) {
 		var $tabla = $("#tablaMuestras tbody");
 		$.each(data,function(i) {
-			$tabla.append('<tr><td><span onclick="llenar_info('+i+');">'  
-				+data[i].titulo+'</span></td></tr>');
+			$tabla.append('<tr><td onclick="llenar_info('+i+');">'+data[i].titulo+'</td></tr>');
 		});
 	});
 }
