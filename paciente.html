@@ -11,10 +11,11 @@
         <!-- CDN para los slides -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/flexslider.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYCisQqbURvsS1I1gh9ymhJ1AP-09BFos"
-    async defer></script>
   <script type="text/javascript" src="javascript/pacienteScript.js"></script>
   <link rel="stylesheet" type="text/css" href="css/pacienteStyles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYCisQqbURvsS1I1gh9ymhJ1AP-09BFos&callback=cargarCentrosMedicos"
+    async defer></script>
+
 
 </head>
 
@@ -48,7 +49,7 @@
     <!--START section bienvenido-->
     <div id="section1" class="container-fluid" >
       
-      <div id="video-container">
+      <div id="section1-bg">
         <video autoplay muted loop class="fillWidth">
           <source src="videos/labtour.mp4" type="video/mp4"/>
         </video>

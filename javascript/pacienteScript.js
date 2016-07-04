@@ -219,12 +219,11 @@ function cargarInfoPaciente(){
 
 
 $( document ).ready(function(){
-
+    cargarInfoPaciente();
     // CARGAR INFORMACION DE CENTROS MEDICOS (PANELES Y MODALS)
-    cargarCentrosMedicos();
 
     // CARGAR INFORMACION DEL PACIENTE
-    cargarInfoPaciente();
+    
 
     // GALERIA DE IMAGENES
     $('#carousel').flexslider({

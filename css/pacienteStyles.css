@@ -44,18 +44,24 @@ body {
 	text-shadow: 2px 2px #000000;
 }
 
-#video-container {
+#section1-bg {
   position: absolute;
-}
-
-#video-container {
   top:0%;
   left:0%;
   height:100%;
   width:100%;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  #section1-bg {
+    background: url("../imagenes/fondos/fondo4.jpg") no-repeat center center;
+    z-index: -1;
+  }
 
+  #section1-bg video {
+    display: none;
+  }
+}
 .panelCentroBody {
 	color: black;
 	font-size: 1.1em;

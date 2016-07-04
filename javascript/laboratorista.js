@@ -1,7 +1,15 @@
 $(document).ready(function() {
 	llenarTablaMuestras();
+	cargarInfoLaboratorista();
 	anim();
 });
+
+function cargarInfoLaboratorista(){
+    $.getJSON("datos/laboratorista.json", function(data){
+        var laborat = data.Nombres+" "+data.Apellidos;
+        $('#laboratNombre').text(laborat);
+    });
+}
 
 
 function llenar_info(i) {

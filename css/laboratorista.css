@@ -12,9 +12,20 @@ body {
 #section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: #673ab7;}
 #section3 {padding-top:50px;color: #fff; background-color: #ff9800;}
 
+#section1-bg {
+  background: url("../imagenes/lab/lab2.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top:0%;
+  left:0%;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
 #section1 {
-	background: url("../imagenes/lab/lab2.jpg") no-repeat center center;
-	background-size: cover;
+
 	font-size: 1.4em;
     overflow: hidden;
     position: relative;
@@ -24,7 +35,7 @@ body {
 }
 
 #section1 h1{
-	text-align: right;
+	text-align: left;
 }
 
 #section1 p {
