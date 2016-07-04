@@ -2,7 +2,17 @@
 	{
 		"Nombre":"Centro Medico Popular 1", 
 		"Direccion":"Av Mariscal Sucre y Toacazo", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Resonancia Magnetica",
@@ -18,7 +28,17 @@
 	{
 		"Nombre":"Hospital Clinica Kennedy", 
 		"Direccion":"Av. del Periodista Avenida 11 NO", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Examenes Generales",
 		 	"Tomografia",
 		 	"Resonancia Magnetica",
@@ -34,7 +54,17 @@
 	{
 		"Nombre":"Clinica La Paz", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 			"Examenes Generales",
 		 	"Radiotempanacion osea",
 		 	"Electrocardiograma",
@@ -50,7 +80,17 @@
 	{
 		"Nombre":"Clinica Latinoamericana", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 			"Diagnóstico preventivo de cáncer",
 		 	"Radiotempanacion osea",
 		 	"Electrocardiograma",
@@ -66,7 +106,17 @@
 	{
 		"Nombre":"Hospital Luis Vernaza", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 			"Tomografías",
 		 	"Radiotempanación osea",
 		 	"Electrocardiograma",
@@ -82,7 +132,17 @@
 	{
 		"Nombre":"Clinica Arizmendi", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Resonancia Magnetica",
@@ -98,7 +158,17 @@
 	{
 		"Nombre":"Maternidad Santa Marianita", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Planificación familiar",
@@ -114,7 +184,17 @@
 	{
 		"Nombre":"Hospital del Seguro IESS", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Resonancia Magnetica",
@@ -130,7 +210,17 @@
 	{
 		"Nombre":"Clínica Alcívar", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -146,7 +236,17 @@
 	{
 		"Nombre":"Hospital Rumiñahui", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -162,7 +262,17 @@
 	{
 		"Nombre":"Clínica Benalcázar", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -178,7 +288,17 @@
 	{
 		"Nombre":"Hospital Alfredo Valenzuela", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -194,7 +314,17 @@
 	{
 		"Nombre":"Laboratorio de Infectología", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -210,7 +340,17 @@
 	{
 		"Nombre":"Hospital Alejandro Mann", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -226,7 +366,17 @@
 	{
 		"Nombre":"Clínica Panamericana", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -242,7 +392,17 @@
 	{
 		"Nombre":"Hospital Teododo Maldonado", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -258,7 +418,17 @@
 	{
 		"Nombre":"Laboratorio clínico # 7", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -274,7 +444,17 @@
 	{
 		"Nombre":"Clínica Castañeda", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -290,7 +470,17 @@
 	{
 		"Nombre":"Centro de Salud # 10", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",
@@ -306,7 +496,17 @@
 	{
 		"Nombre":"Clínica La Asunción", 
 		"Direccion":"Ave Viracochabamba, Cuenca", 
-		"Descripcion":[
+		"Telefono":"042-123456",
+        "Horarios":{
+	        "Lunes":"09:00 - 17:30",
+            "Martes":"09:00 - 17:30",
+            "Miercoles":"09:00 - 17:30",
+            "Jueves":"09:00 - 17:30",
+            "Viernes":"09:00 - 17:30",
+        	"Sabado":"10:00 - 16:00",
+        	"Domingo":"11:00 - 15:30"
+        },
+        "Descripcion":[
 		 	"Desintometria Osea",
 		 	"Hemograma completo",
 		 	"Tomografía abdomino-pélvica",

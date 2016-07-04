@@ -8,7 +8,7 @@ body {
 	font-family: 'Philosopher', 'Verdana', sans-serif;
 }
 
-#map_canvas, #map_canvas2, #map_canvas3{
+.mapCanvas {
 	height: 300px;
 	width: 100%;
 }
@@ -56,9 +56,11 @@ body {
   overflow: hidden;
 }
 
-.centroPanel {
+.panelCentroBody {
 	color: black;
 	font-size: 1.1em;
+	height: 200px;
+	overflow-y: scroll;
 }
 
 video {
@@ -75,11 +77,19 @@ video.fillWidth {
 	width: 90%;
 }
 
-#section2 .row-md-12 .col-md-4 {
-	/* # */
+.content-slide{
+	max-width: 70%;
+	margin: 0px auto;
 }
 
-#section2 .row-md-12 .col-md-4 .panel{
-	height: 315px;
-	overflow-y: scroll;
+#slider{
+	margin: 0px;
+}
+
+.pie {
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 2%;
+	text-shadow: 1px 1px #000;
+	color: #FFF
 }
