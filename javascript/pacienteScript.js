@@ -10,7 +10,7 @@ function cargarCentrosMedicos(){
 
             // Creo todos los elementos del panel
             var centrosMedicos = $('#centrosMedicos');
-            var column = $('<div class="col-md-4"></div>');
+            var column = $('<div class="col-md-4" id="Centro'+i+'""></div>');
             var panel = $('<div class="panel panel-default panelCentro"></div>');
             var panelHeading = $('<div class="panel-heading"></div>');
             var panelHeader = $('<h3 class="panel-title text-center">'+nombre+'</h3>');
@@ -205,9 +205,40 @@ function cargarCentrosMedicos(){
             horariosTableBody.append(horariosDomingo);
 
             row2.append(horariosColumn);
-           
+          
         });
+
+        ocultarPaneles();
+        //mostrar3paneles();
+
     });
+
+}
+
+// Esta funcion ya deja los 3 primeros paneles visibles
+function ocultarPaneles(){
+   for (var i = 20; i > 2 ; i--){
+        $("#Centro"+i).addClass("hidden");
+    }
+}
+
+function mostrar3paneles(){
+    var a = $(".hidden")  // Cuento los Paneles hidden
+    var indice = 20 - a.length; // Hallo el indice desde el ultimo visible
+    console.log(a.length);
+   for (var i = 0; i < 3 ; i++){
+        $("#Centro"+(indice+i)).removeClass("hidden");
+    }
+
+    // Deshabilitar el boton cuando no hayan mas paneles que mostrar
+    if (indice>=20) {
+        $('#btn-showmore').text("No hay más centros");
+        $('#btn-showmore').attr("disabled", true);
+    }
+    else {
+        $('#btn-showmore').attr("disabled", false);
+    }
+
 }
 
 function cargarInfoPaciente(){
@@ -220,6 +251,7 @@ function cargarInfoPaciente(){
 
 $( document ).ready(function(){
     cargarInfoPaciente();
+    
     // CARGAR INFORMACION DE CENTROS MEDICOS (PANELES Y MODALS)
 
     // CARGAR INFORMACION DEL PACIENTE
@@ -263,5 +295,7 @@ $( document ).ready(function(){
             hashTagActive = this.hash;
         }
     });
+
+
 
 });

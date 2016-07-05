@@ -62,6 +62,20 @@ body {
     display: none;
   }
 }
+
+/*  Para ocultar los paneles */ 
+.hidden{
+	display: none !important;
+}
+
+/*  Controla el botón para mostrar más centros */
+#btn-showmore {
+	display: block;
+	margin: auto;
+	align-self: center;
+	clear: both;
+}
+
 .panelCentroBody {
 	color: black;
 	font-size: 1.1em;
