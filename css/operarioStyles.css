@@ -14,8 +14,8 @@ body {
 }
 
 #section1 {padding-top:70px;color: #fff; background-color:rgba(0,0,0,0.5);}
-#section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;color: #fff; background-color: #ff9800;}
+#section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: rgb(94, 146, 161);}
+#section3 {padding-top:50px;color: #fff; background-color: rgb(142, 185, 133);}
 
 #section1 {
 	font-size: 1.4em;

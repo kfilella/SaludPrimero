@@ -14,8 +14,8 @@ body {
 }
 
 #section1 {padding-top:70px;color: #fff; background-color:rgba(0,0,0,0.5);}
-#section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;color: #fff; background-color: #ff9800;}
+#section2 {padding-top:50px;padding-bottom:50px;color: #fff; background-color:rgb(94, 146, 161);}
+#section3 {padding-top:50px;color: #fff; background-color: rgb(142, 185, 133);}
 
 #section1 {
 	font-size: 1.4em;
@@ -23,16 +23,17 @@ body {
     position: relative;
     width: 100%;
     padding-bottom: 100px;
+    text-align: center;
 }
 
-#section1 p {
-	text-align: center;
+#section1 h1 {
+	text-align: left;
 }
 
 #section1 img {
 	display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 #section2 .centrosText {
@@ -51,11 +52,13 @@ body {
   height:100%;
   width:100%;
   overflow: hidden;
+  z-index: -1;
 }
+
 @media (max-width: 767px) {
   #section1-bg {
     background: url("../imagenes/fondos/fondo4.jpg") no-repeat center center;
-    z-index: -1;
+    
   }
 
   #section1-bg video {
@@ -74,6 +77,20 @@ body {
 	margin: auto;
 	align-self: center;
 	clear: both;
+}
+
+#btn-centros, #btn-galeria {
+  	border: 3px solid #ffffff;
+ 	color: #ffffff;
+	padding: 10px;
+	margin: 10px;
+	font-size: 1.1em;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
 }
 
 .panelCentroBody {
