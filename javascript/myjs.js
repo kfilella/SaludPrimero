@@ -29,6 +29,9 @@ function inicio_sesion(){
     else if ($var1=="laborat") {
 		  $(".login2 .form-signin").attr("action","laboratorista.html");
   	} 
+    else if ($var1=="oper") {
+      $(".login2 .form-signin").attr("action","operario.html");
+    }
     else {
       alert("¡Usuario incorrecto!");
     }
