@@ -46,6 +46,7 @@ body {
 }
 
 #section1-bg {
+  text-align: left;
   position: absolute;
   top:0%;
   left:0%;
