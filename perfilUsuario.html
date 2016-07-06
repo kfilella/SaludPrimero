@@ -65,72 +65,67 @@
     <div id="section1" class="container-fluid" >
        <h1 style="text-align: left;">Editar Perfil</h1>
       <hr/>
-      <div class="container">
-
-         
-
-        <div class="row">
-            <!-- left column -->
-            <div class="col-md-3 text-center">
-                <img id="fotoPerfil" src="imagenes/usuario_perfil/perfil_default.png" style="height: 200px; width: 200px;" alt="avatar">
-                <h4>Cambiar imagen de perfil</h4>
-                
-                <input type="file" onchange="readURL(this);" class="form-control">
-            </div>
-            <br/>
-            <!-- edit form column -->
-            <div class="col-md-9 infoPerfil">
-              <form class="form-horizontal" role="form">
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Nombres:</label>
-                  <div class="col-lg-8">
-                    <input id="inputNombres" class="form-control" type="text" placeholder="Ingrese su nombre">
-                  </div>
+      <div class="row">
+          <!-- left column -->
+          <div class="col-md-3 text-center">
+              <img id="fotoPerfil" src="imagenes/usuario_perfil/perfil_default.png" style="height: 200px; width: 200px;" alt="avatar">
+              <h4>Cambiar imagen de perfil</h4>
+              
+              <input type="file" onchange="readURL(this);" class="form-control">
+          </div>
+          <br/>
+          <!-- edit form column -->
+          <div class="col-md-9 infoPerfil">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Nombres:</label>
+                <div class="col-lg-8">
+                  <input id="inputNombres" class="form-control" type="text" placeholder="Ingrese su nombre">
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Apellidos:</label>
-                  <div class="col-lg-8">
-                    <input id="inputApellidos" class="form-control" type="text" placeholder="Ingrese su apellido">
-                  </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Apellidos:</label>
+                <div class="col-lg-8">
+                  <input id="inputApellidos" class="form-control" type="text" placeholder="Ingrese su apellido">
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">C&eacute;dula:</label>
-                  <div class="col-lg-8">
-                    <input id="inputCedula" class="form-control" type="text" placeholder="Ingrese su n&uacute;mero de c&eacute;dula">
-                  </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">C&eacute;dula:</label>
+                <div class="col-lg-8">
+                  <input id="inputCedula" class="form-control" type="text" placeholder="Ingrese su n&uacute;mero de c&eacute;dula">
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">E-mail:</label>
-                  <div class="col-lg-8">
-                    <input id="inputEmail" class="form-control" type="email" placeholder="Ingrese su direcci&oacute;n de correo electr&oacute;nico">
-                  </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">E-mail:</label>
+                <div class="col-lg-8">
+                  <input id="inputEmail" class="form-control" type="email" placeholder="Ingrese su direcci&oacute;n de correo electr&oacute;nico">
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Direcci&oacute;n:</label>
-                  <div class="col-lg-8">
-                    <input id="inputDireccion" class="form-control" type="text" placeholder="Ingrese la direcci&oacute;n de su domicilio">
-                  </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Direcci&oacute;n:</label>
+                <div class="col-lg-8">
+                  <input id="inputDireccion" class="form-control" type="text" placeholder="Ingrese la direcci&oacute;n de su domicilio">
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Tel&eacute;fonos:</label>
-                  <div class="col-lg-4">
-                    <input id="inputTelefono1" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 1">
-                  </div>
-                  <div class="col-lg-4">
-                    <input id="inputTelefono2" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 2">
-                  </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Tel&eacute;fonos:</label>
+                <div class="col-lg-4">
+                  <input id="inputTelefono1" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 1">
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label"></label>
-                  <div class="col-lg-8">
-                    <input type="submit" class="btn btn-primary" value="Guardar">
-                    <span></span>
-                    <input type="reset" class="btn btn-default" value="Cancelar">
-                  </div>
+                <div class="col-lg-4">
+                  <input id="inputTelefono2" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 2">
                 </div>
-              </form>
-            </div>
-        </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label"></label>
+                <div class="col-lg-8">
+                  <input type="submit" class="btn btn-primary" value="Guardar">
+                  <span></span>
+                  <input type="reset" class="btn btn-default" value="Cancelar">
+                </div>
+              </div>
+            </form>
+          </div>
       </div>
       <hr>
     </div>
