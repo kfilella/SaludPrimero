@@ -11,13 +11,10 @@
         <!-- CDN para los slides -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/flexslider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     
     <script type="text/javascript" src="javascript/operarioScript.js"></script>
     <link rel="stylesheet" type="text/css" href="css/operarioStyles.css">
-    
-    <!-- API de Google Maps -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhozdHpuD21hZP-lkveAlTbK5M0r887eM&callback=cargarCentrosMedicos" async defer></script> -->
-
 </head>
 
 <body data-spy="scroll" data-target=".navbar" >
@@ -35,9 +32,8 @@
       <div class="collapse navbar-collapse" id="pacienteBar">
           
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-duplicate"></i> Registrar muestra</a></li>
-            <li><a href="#section2" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-map-marker"></i> Muestras ingresadas</a></li>
-            <li><a href="#section3" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-picture"></i> Reportes y Estad&iacute;sticas</a></li>
+            <li><a href="registroMuestra.html" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-duplicate"></i> Registrar muestra</a></li>
+            <li><a href="ReportesEstadisticas.html" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="glyphicon glyphicon-picture"></i> Reportes y Estad&iacute;sticas</a></li>
             <li><a href="index.html"><i class="glyphicon glyphicon-off" data-toggle="collapse" data-target=".navbar-collapse.in" ></i> Salir</a></li>
           </ul>
 
@@ -58,6 +54,8 @@
       <p>Salud Primero S.A. </p>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
       <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <br>
+      <a id="btn-muestras" href="#section2" class="scroll btn btn-primary btn-outline" role="button"> Muestras registradas</a>
     </div>
     <!--END section bienvenido-->
 
