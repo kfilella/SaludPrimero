@@ -270,11 +270,16 @@ function llenarTablaMuestras() {
     $.getJSON("datos/datos_muestras.json", function(data) {
         var $tabla = $("#tablaMuestras tbody");
         $.each(data,function(i) {
-            $tabla.append('<tr><td onclick="llenar_info('+i+');"><span class="tituloMuestra">'+data[i].titulo+'</span><button class="btn btn-default" onclick="">Editar</button>    <button class="btn btn-default" onclick="">Eliminar</button></td></tr>');
+            $tabla.append('<tr id="M'+i+'"><td><span class="tituloMuestra" onclick="llenar_info('+i+');">'+data[i].titulo+'</span><button class="btn btn-default" onclick="">Editar</button>    <button class="btn btn-default" onclick="EliminarItem('+i+')">Eliminar</button></td></tr>');
         });
     });
 }
 
+function EliminarItem(i){
+    $("#info-mues h2").remove();    
+    $("#info-mues p").remove();
+    var $a = $("#M"+i).remove();
+}
 
 $( document ).ready(function(){
     cargarInfoOperario();
