@@ -7,8 +7,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="javascript/perfilUsuarioScript.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/perfilUsuarioStyles.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/examenesStyles.css">
+  <script type="text/javascript" src="javascript/examenes.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" >
@@ -35,72 +36,56 @@
 
   <div class="container">
     <div id="section1" class="container-fluid" >
-          <h1 style="text-align: left;">Editar Perfil</h1>
-          <hr>
-        <div class="row">
-            <!-- left column -->
-            <div class="col-md-3 text-center">
-                <img id="fotoPerfil" src="imagenes/usuario_perfil/perfil_default.png" style="height: 200px; width: 200px;" alt="avatar">
-                <h4>Cambiar imagen de perfil</h4>
-                
-                <input type="file" onchange="readURL(this);" class="form-control">
-            </div>
-            <br/>
-            <!-- edit form column -->
-            <div class="col-md-9 infoPerfil">
-              <form class="form-horizontal" role="form">
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Nombres:</label>
-                  <div class="col-lg-8">
-                    <input id="inputNombres" class="form-control" type="text" placeholder="Ingrese su nombre">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Apellidos:</label>
-                  <div class="col-lg-8">
-                    <input id="inputApellidos" class="form-control" type="text" placeholder="Ingrese su apellido">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">C&eacute;dula:</label>
-                  <div class="col-lg-8">
-                    <input id="inputCedula" class="form-control" type="text" placeholder="Ingrese su n&uacute;mero de c&eacute;dula">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">E-mail:</label>
-                  <div class="col-lg-8">
-                    <input id="inputEmail" class="form-control" type="email" placeholder="Ingrese su direcci&oacute;n de correo electr&oacute;nico">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Direcci&oacute;n:</label>
-                  <div class="col-lg-8">
-                    <input id="inputDireccion" class="form-control" type="text" placeholder="Ingrese la direcci&oacute;n de su domicilio">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Tel&eacute;fonos:</label>
-                  <div class="col-lg-4">
-                    <input id="inputTelefono1" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 1">
-                  </div>
-                  <div class="col-lg-4">
-                    <input id="inputTelefono2" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 2">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label"></label>
-                  <div class="col-lg-8">
-                    <input type="submit" class="btn btn-primary" value="Guardar">
-                    <span></span>
-                    <input type="reset" class="btn btn-default" value="Cancelar">
-                  </div>
-                </div>
-              </form>
-            </div>
-        </div>
+      <h1 style="text-align: left;">Ex&aacute;menes</h1>
       <hr>
-      
+      <button type="button" id="buscarExamenBtn" data-toggle="collapse" data-target="#buscarExamen" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i> Buscar Ex&aacute;menes</button>
+      <div class="row">
+        <div class="panel panel-default collapse" id="buscarExamen">
+          <form>
+            <div class="panel-body">
+              <div class="form-group col-xs-12 col-sm-2">
+                <label for="tipo">Tipo</label>
+                <select class="form-control input" id="tipo" name="tipo">
+                  <option selected="selected"></option>
+                  <option>Tipo Examen 1</option>
+                  <option>Tipo Examen 2</option>
+                  <option>Tipo Examen 3</option>
+                  <option>Tipo Examen 4</option>
+                </select>
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <div class="form-group">
+                  <label for="estado">Estado</label>
+                  <select class="form-control input" id="estado" name="estado">
+                    <option selected="selected"></option>
+                    <option value="0">Pendiente</option>
+                    <option value="1">Ingresado</option>
+                    <option value="2">En proceso</option>
+                    <option value="3">Listo</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-4">
+                <label for="iniExamen">Fecha inicio</label>
+                <!-- Campo para ingresar fecha inicial para busqueda del partido -->
+                <input type="date" class="form-control" id="iniExamen" name="iniExamen">
+              </div>
+              <div class="form-group col-xs-12 col-sm-4">
+                <label for="finExamen">Fecha fin</label>
+                <!-- Campo para ingresar la fecha final para busqueda del partido -->
+                <input type="date" class="form-control" id="finExamen" name="finExamen">
+              </div>
+              <div class="col-xs-12" >
+                <button type="submit" class="btn btn-primary">Buscar ex&aacute;menes</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="examenes" class="row-md-12" >
+
+      </div> <!--END row-md-12 -->
+      <hr>
     </div>
 
     <!--END section bienvenido-->
