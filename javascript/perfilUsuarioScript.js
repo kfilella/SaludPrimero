@@ -32,7 +32,7 @@ function readURL(input) {
         reader.onload = function (e) {
             $('#fotoPerfil')
                 .attr('src', e.target.result)
-                .width(150)
+                .width(200)
                 .height(200);
         };
 
@@ -47,12 +47,25 @@ $( document ).ready(function(){
             alert("Datos actualizados!");
         }
     });
+    $.validator.addMethod(
+        "regex",
+        function(value, element, regexp) {
+            var re = new RegExp(regexp);
+            return this.optional(element) || re.test(value);
+        },
+        "Formato inválido."
+    );
     $("#perfilForm").validate({
         errorClass: "errorPerfil",
-        validClass: "validPerfil",
         rules: {
-            nombres: "required",
-            apellidos: "required",
+            nombres: {
+                required: true,
+                regex: '^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]*$'
+            },
+            apellidos: {
+                required: true,
+                regex: '^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]*$'
+            },
             email: {
                 required: true,
                 email: true
@@ -62,16 +75,30 @@ $( document ).ready(function(){
                 required: true,
                 number: true,
                 minlength: 10,
-                maxlength: 13
+                maxlength: 10
             },
             telefono1: "required"
         },
         messages: {
-            nombres: "* Ingrese sus nombres",
-            apellidos: "* Ingrese sus apellidos",
-            email: "* Ingrese su direcci&oacute;n de correo electr&oacute;nico",
+            nombres: {
+                required: "* Ingrese sus nombres",
+                regex: "* Nombres s&oacute;lo deben contener letras"
+            },
+            apellidos: {
+                required: "* Ingrese sus apellidos",
+                regex: "* Apellidos s&oacute;lo deben contener letras"
+            },
+            email: {
+                required: "* Ingrese su direcci&oacute;n de correo electr&oacute;nico",
+                email: "* El formato del correo electr&oacute;nico es: email@sitio.com"
+            },
             direccion: "* Ingrese una direcci&oacute;n",
-            cedula: "* Ingrese un n&uacute;mero de c&eacute;dula v&aacute;lido",
+            cedula: {
+                required: "* Ingrese un n&uacute;mero de c&eacute;dula v&aacute;lido",
+                number: "* C&eacute;dula de identidad contiene s&oacute;lo valores num&eacute;ricos",
+                minlength: "* C&eacute;dula de identidad contiene 10 d&iacute;gitos",
+                maxlength: "* C&eacute;dula de identidad contiene 10 d&iacute;gitos"
+            },
             telefono1: "* Ingrese su n&uacute;mero telef&oacute;nico"
         }
     });
