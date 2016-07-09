@@ -8,20 +8,20 @@ function cargarInfoPerfil(){
         var telefono = data.Telefonos;
         var paciente = nombres+" "+apellidos;
         $('#pacienteNombre').text(paciente);
-        $('#inputNombres').val(nombres);
-        $('#inputNombres').attr('value', nombres);
-        $('#inputApellidos').val(apellidos);
-        $('#inputApellidos').attr('value', apellidos);
-        $('#inputCedula').val(cedula);
-        $('#inputCedula').attr('value', cedula);
-        $('#inputEmail').val(email);
-        $('#inputEmail').attr('value', email);
-        $('#inputDireccion').val(direccion);
-        $('#inputDireccion').attr('value', direccion);
-        $('#inputTelefono1').val(telefono[0]);
-        $('#inputTelefono1').attr('value', telefono[0]);
-        $('#inputTelefono2').val(telefono[1]);
-        $('#inputTelefono2').attr('value', telefono[1]);
+        $('#nombres').val(nombres);
+        $('#nombres').attr('value', nombres);
+        $('#apellidos').val(apellidos);
+        $('#apellidos').attr('value', apellidos);
+        $('#cedula').val(cedula);
+        $('#cedula').attr('value', cedula);
+        $('#email').val(email);
+        $('#email').attr('value', email);
+        $('#direccion').val(direccion);
+        $('#direccion').attr('value', direccion);
+        $('#telefono1').val(telefono[0]);
+        $('#telefono1').attr('value', telefono[0]);
+        $('#telefono2').val(telefono[1]);
+        $('#telefono2').attr('value', telefono[1]);
     });
 }
 
@@ -42,4 +42,37 @@ function readURL(input) {
 
 $( document ).ready(function(){
     cargarInfoPerfil();
+    $.validator.setDefaults({
+        submitHandler: function() {
+            alert("Datos actualizados!");
+        }
+    });
+    $("#perfilForm").validate({
+        errorClass: "errorPerfil",
+        validClass: "validPerfil",
+        rules: {
+            nombres: "required",
+            apellidos: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            direccion: "required",
+            cedula: {
+                required: true,
+                number: true,
+                minlength: 10,
+                maxlength: 13
+            },
+            telefono1: "required"
+        },
+        messages: {
+            nombres: "* Ingrese sus nombres",
+            apellidos: "* Ingrese sus apellidos",
+            email: "* Ingrese su direcci&oacute;n de correo electr&oacute;nico",
+            direccion: "* Ingrese una direcci&oacute;n",
+            cedula: "* Ingrese un n&uacute;mero de c&eacute;dula v&aacute;lido",
+            telefono1: "* Ingrese su n&uacute;mero telef&oacute;nico"
+        }
+    });
 });

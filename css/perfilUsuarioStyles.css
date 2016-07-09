@@ -19,6 +19,12 @@ body {
 	text-align: center;
 }
 
+.errorPerfil {
+    color:#FF0000;
+    text-shadow: none;
+    font-size: 0.75em;
+}
+
 #section1 {
 	text-shadow: 2px 2px #000000;
 	font-size: 1.4em;

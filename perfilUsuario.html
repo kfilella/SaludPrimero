@@ -7,6 +7,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
   <script type="text/javascript" src="javascript/perfilUsuarioScript.js"></script>
   <link rel="stylesheet" type="text/css" href="css/perfilUsuarioStyles.css">
 </head>
@@ -20,7 +22,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="paciente.html" class="scroll" data-toggle="collapse" data-target=".navbar-collapse.in" style="font-size: 1.5em;text-decoration: none;"><img src="imagenes/logo.png" alt="salud primero" width="50" height="50">Salud Primero S.A.</a>
+        <a href="paciente.html" style="font-size: 1.5em;text-decoration: none;"><img src="imagenes/logo.png" alt="salud primero" width="50" height="50">Salud Primero S.A.</a>
       </div>
       <div class="collapse navbar-collapse" id="pacienteBar">
           
@@ -49,44 +51,44 @@
           <br/>
           <!-- edit form column -->
           <div class="col-md-9 infoPerfil">
-            <form class="form-horizontal" role="form">
+            <form id="perfilForm" class="form-horizontal" role="form">
               <div class="form-group">
-                <label class="col-lg-3 control-label">Nombres:</label>
+                <label for="nombres" class="col-lg-3 control-label">Nombres:</label>
                 <div class="col-lg-8">
-                  <input id="inputNombres" class="form-control" type="text" placeholder="Ingrese su nombre">
+                  <input id="nombres" name="nombres" class="form-control" type="text" placeholder="Ingrese su nombre">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-lg-3 control-label">Apellidos:</label>
+                <label for="apellidos" class="col-lg-3 control-label">Apellidos:</label>
                 <div class="col-lg-8">
-                  <input id="inputApellidos" class="form-control" type="text" placeholder="Ingrese su apellido">
+                  <input id="apellidos" name="apellidos" class="form-control" type="text" placeholder="Ingrese su apellido">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-lg-3 control-label">C&eacute;dula:</label>
+                <label for="cedula" class="col-lg-3 control-label">C&eacute;dula:</label>
                 <div class="col-lg-8">
-                  <input id="inputCedula" class="form-control" type="text" placeholder="Ingrese su n&uacute;mero de c&eacute;dula">
+                  <input id="cedula" name="cedula" class="form-control" type="text" placeholder="Ingrese su n&uacute;mero de c&eacute;dula">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-lg-3 control-label">E-mail:</label>
+                <label for="email" class="col-lg-3 control-label">E-mail:</label>
                 <div class="col-lg-8">
-                  <input id="inputEmail" class="form-control" type="email" placeholder="Ingrese su direcci&oacute;n de correo electr&oacute;nico">
+                  <input id="email" name="email" class="form-control" type="email" placeholder="Ingrese su direcci&oacute;n de correo electr&oacute;nico">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-lg-3 control-label">Direcci&oacute;n:</label>
+                <label for="direccion" class="col-lg-3 control-label">Direcci&oacute;n:</label>
                 <div class="col-lg-8">
-                  <input id="inputDireccion" class="form-control" type="text" placeholder="Ingrese la direcci&oacute;n de su domicilio">
+                  <input id="direccion" name="direccion" class="form-control" type="text" placeholder="Ingrese la direcci&oacute;n de su domicilio">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-lg-3 control-label">Tel&eacute;fonos:</label>
+                <label for="telefono1" class="col-lg-3 control-label">Tel&eacute;fonos:</label>
                 <div class="col-lg-4">
-                  <input id="inputTelefono1" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 1">
+                  <input id="telefono1" name="telefono1" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 1">
                 </div>
                 <div class="col-lg-4">
-                  <input id="inputTelefono2" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 2">
+                  <input id="telefono2" name="telefono2" class="form-control" type="tel" placeholder="Ingrese su n&uacute;mero telef&oacute;nico 2">
                 </div>
               </div>
               <div class="form-group">
